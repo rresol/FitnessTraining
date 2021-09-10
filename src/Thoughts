@@ -1,0 +1,56 @@
+Entities
+Classes
+
+List of SLots
+    Yoga
+    Gym
+    Dance
+
+User
+
+    name
+    List<Slots>
+
+Slot
+    Time
+    Capacity
+
+SlotStaus
+Canceled
+Ava
+Services:
+    UserProfileSerice
+    ClassRepository
+    User list of slot
+    Map<Class,List<slots>>
+    Map<SlotId, Slots>
+    Map<SlotID,List<WaitingMembers>>
+
+    user decide based on the slot id
+
+    Static data for the profiles and services
+    Book a slot
+        - Args User Class
+            --time?
+        - Map of classes and slots
+        - Fetch all the slots for a class
+        - if available get the slot
+        - Assign the slot to the user
+        - Print user and class info
+        - if not available
+            - Map class and waiting list
+            - add the member to waiting list
+
+
+    cancel the class
+        - take the slot id
+        - fetch the slot object
+        - update the slot
+        - Mark slot canceled
+        - slot capacity increases
+        - Assign waiting members
+    assign waiting:
+        - et the list of waiting memebers per slotId
+        - Pick the slot
+
+
